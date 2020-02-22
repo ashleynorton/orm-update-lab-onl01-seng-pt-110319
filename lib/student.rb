@@ -5,7 +5,7 @@ class Student
   attr_accessor :name, :grade
   attr_reader :id 
   
-  def initialize(id=nil, name, grade)
+  def initialize(id = nil, name, grade)
     @id = id 
     @name = name 
     @grade = grade
@@ -61,7 +61,7 @@ class Student
       SELECT *
       FROM students 
       WHERE name = ?
-      LIMIT 1 
+      
     SQL
     
     DB[:conn].execute(sql, name).map do |row|
