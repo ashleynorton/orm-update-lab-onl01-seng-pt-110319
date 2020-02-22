@@ -74,6 +74,8 @@ class Student
       SET name = ?, grade = ?
       WHERE id = ?
     SQL
+    
+    
   end 
   
 end
